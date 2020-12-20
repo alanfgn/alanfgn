@@ -14,6 +14,6 @@ System.out.println("With Java")
 
 ```python
 # Currently interested in Nlp
-print("With python")
+print("With Python")
 ```
 
