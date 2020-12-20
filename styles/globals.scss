@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway&display=swap');
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+
+	line-height: 1.6;
+	font-size: 18px;
+
+	background: rgb(32, 55, 98);
+	background: linear-gradient(35deg, rgba(21, 101, 122, 1) 2%, rgba(42, 49, 112, 1) 20%, rgba(17, 7, 41, 1) 86%);
+
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+a {
+	text-decoration: none;
+	color: #16d8e6;
+	transition:  0.5s;
+	font-weight: bold;
+
+	&:hover {
+		text-shadow: 0px 0px 10px rgba($color: #16d8e6, $alpha: 0.8);
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
