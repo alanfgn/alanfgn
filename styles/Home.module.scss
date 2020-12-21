@@ -6,7 +6,7 @@
 	justify-content: center;
 	align-items: center;
 
-	background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+	background-image: url("/stardust.png");
 }
 
 .main {
@@ -27,8 +27,18 @@
 	.profile {
 		border-right: 0 !important;
 		border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
-		width: 60% !important;
+		width: 80% !important;
 		align-items: center;
+	}
+
+	.info {
+		width: 80% !important;
+	}
+}
+
+@media (max-width: 800px) {
+	.profile {
+		width: 80% !important;
 	}
 
 	.info {
@@ -44,7 +54,7 @@
 	align-items: flex-start;
 	padding: 3rem;
 	border-right: 1px solid rgba($color: #fff, $alpha: 0.5);
-	width: 30%;
+	width: 450px;
 	box-sizing: border-box;
 
 	.title {

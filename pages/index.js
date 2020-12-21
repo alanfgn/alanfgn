@@ -8,7 +8,7 @@ const Home = () => {
 	const today = new Date();
 
 	return (
-		<div className={styles.container}>
+		<div className={`${styles.container}`}>
 			<Head>
 				<title>Alan</title>
 				<link rel="icon" href="/favicon.ico" />
