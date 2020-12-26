@@ -31,7 +31,7 @@ const Home = () => {
 
 					<div className={styles.text}>
 						Sou desenvolvedor de software, formado em engenharia de software pela{" "}
-						<a href="https://www.ucsal.br/"> Ucsal</a>, atualmente desenvolvo na{" "}
+						<a href="https://www.ucsal.br/"> Ucsal</a>. Atualmente desenvolvo na{" "}
 						<a href="https://solutis.com.br/">Solutis</a>, tenho {parseInt(today.getFullYear()) - 1998} anos
 						e sou de Salvador, Bahia, Brasil. Amo gatos e acho o ceu noturno muito bonito.
 					</div>
