@@ -9,7 +9,7 @@ body {
 	font-size: 18px;
 
 	background: rgb(32, 55, 98);
-	background: linear-gradient(35deg, rgba(21, 101, 122, 1) 1%, rgba(42, 49, 112, 1) 10%, rgba(17, 7, 41, 1) 86%);
+	background: linear-gradient(42deg, rgb(13, 1, 26) 20%, rgb(0, 6, 21) 80%);
 
 	color: #fff;
 	font-family: "Raleway", sans-serif;
@@ -17,19 +17,26 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
 	margin: 0;
 	font-family: "Comfortaa", cursive;
 }
 
+p {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
-	color: #16d8e6;
+	color: #12a3d0;
 	transition: 0.5s;
 	font-weight: bold;
 
 	&:hover {
-		text-shadow: 0px 0px 10px rgba($color: #16d8e6, $alpha: 0.8);
+		text-shadow: 0px 0px 10px rgba($color: #18d4f5, $alpha: 0.8);
+		color: #18d4f5;
 	}
 }
 
