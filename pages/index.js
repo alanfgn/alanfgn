@@ -23,6 +23,7 @@ const Home = () => {
 
 					<div className={styles.interest}>
 						<span className={styles.chip}> Python </span>
+						<span className={styles.chip}> Java </span>
 						<span className={styles.chip}> JavaScript </span>
 						<span className={styles.chip}> React </span>
 						<span className={styles.chip}> Data Sience </span>
