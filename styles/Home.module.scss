@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 .container {
 	min-height: 100vh;
 
@@ -12,60 +14,58 @@
 }
 
 .main {
-	width: 100%;
-	position: relative;
-
+	width: 100vw;
 	display: flex;
-	flex-direction: row;
+	position: relative;
 	flex-direction: column;
-
-	justify-content: center;
-	align-items: center;
 }
 
-.principal {
-	z-index: 1;
 
-	width: 100vw;
-	height: 100vh;
-
-	overflow: hidden;
+.menu {
+	// border: 1px solid #fff;
+	position: absolute;
 	display: flex;
-	flex-direction: column;
+	z-index: 1;
+	
+	width: 80vw;
+	margin: 1rem 10vw;
+	justify-content: flex-end;
 
-	justify-content: center;
-	justify-items: center;
-	align-items: center;
-	align-content: center;
+	div {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+	}
 }
 
 .sky {
 	overflow: hidden;
 	position: fixed;
-	width: 150vw;
-	height: 220vh;
-	animation: move 120s linear infinite;
+	width: 100vw;
+	height: 100vh;
 	z-index: 0;
-	// border: 1px solid red;
-	// border-bottom: 1px solid blue;
+	top: 0;
 }
 
 .particle {
 	position: absolute;
 	animation: glow 3s ease-in-out infinite alternate;
-	animation-name: glow;
+	animation: fade 3s ease-in-out infinite alternate;
+
+	animation-name: glow, fade;
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none;
 
-	@for $i from 0 to 200 {
+	@for $i from 0 to 130 {
 		$t: (1 + 0.01 * random(200)) * 1s;
 
 		&:nth-child(#{$i + 1}) {
 			transform: translate(random(110) * 1vw, random(200) * 1vh);
-			color: rgba($color: rgb(239, 253, 255), $alpha: 0.7);
-			font-size: 1px * random(14) + 1;
+
+			color: rgba($color: #fff, $alpha: 0.7);
+
+			font-size: 1px * random(8) + 1;
 
 			animation-duration: $t;
 			animation-delay: -0.01 * random(100) * $t;
@@ -88,95 +88,201 @@ $secondary-glow-color: #24effd;
 	}
 }
 
-@keyframes move {
-	0% {
-		transform: rotate(0deg);
+@keyframes fade {
+	from {
+		opacity: 0.5;
 	}
 
-	100% {
-		transform: rotate(360deg);
+	to {
+		opacity: 1;
 	}
 }
 
-.title {
-	z-index: 1;
-	// border: 1px solid #fff;
+.saudation {
+	height: 100vh;
+	position: relative;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	justify-items: center;
 	align-items: center;
-	align-content: center;
-	border-radius: 50%;
 
-	background: linear-gradient(90deg, rgba(#000, 0.5), rgba(#000, 0));
-	height: 200px;
-	width: 200px;
+	.card {
+		width: 80vw;
+		max-width: 1000px;
 
-	h1 {
-		font-weight: bold;
-		text-align: center;
-		font-size: 35px;
-	}
+		height: 55%;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
+		background-color: rgba($color: #000000, $alpha: 0.3);
 
-	h4 {
-		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		flex-direction: column;
+
+		.title {
+			font-weight: bold;
+			font-size: 45px;
+			text-align: center;
+			text-shadow: 0 0 10px #fff;
+		}
+
+		.subtitle {
+			font-size: 15px;
+			text-align: center;
+			opacity: 0.8;
+		}
+
+		.particles {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		.contacts {
+			z-index: 1;
+			width: 100%;
+			min-height: 40px;
+			margin-top: 1rem;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			font-size: 13px;
+			align-items: center;
+
+			a {
+				display: inline-flex;
+				color: #fff;
+				margin: 0.5rem;
+				opacity: 0.5;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
 	}
 }
 
-.interest {
-	display: inline-block;
-	padding: 1rem;
-	padding-top: 2rem;
-	margin: -5px;
-	text-align: center;
+.description {
+	z-index: 1;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
 
+	.text {
+		width: 80vw;
+		max-width: 1000px;
+
+		border-top: 2px solid rgba($color: #fff, $alpha: 0.7);
+		position: relative;
+
+		padding: 1rem;
+		padding-top: 2rem;
+		padding-left: 3rem;
+		font-size: 14px;
+
+		text-align: justify;
+
+		h4 {
+			font-size: 20px;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.text::before,
+	.text::after {
+		content: "";
+		background-color: rgba($color: #fff, $alpha: 0.7);
+		top: -15px;
+		bottom: -4px;
+		left: 15px;
+		position: absolute;
+		width: 2px;
+		opacity: 0.7;
+		height: 170%;
+	}
+
+	.list {
+		width: 80vw;
+		max-width: 1000px;
+
+		border-top: 2px solid rgba($color: #fff, $alpha: 0.7);
+		position: relative;
+
+		padding: 1.5rem 3rem;
+		font-size: 14px;
+
+		text-align: justify;
+
+		h4 {
+			font-size: 20px;
+			margin-bottom: 1rem;
+		}
+
+		.cardlist {
+
+			.item {
+				margin: 1rem 0;
+				border: 3px solid rgba($color: #fff, $alpha: 0.7);
+				padding: 1.5rem;
+				padding-bottom: 0.5rem;
+				border-radius: 5px;
+				transition: 0.5s;
+				font-weight: normal;
+				font-size: 13px;
+				position: relative;
+
+				h5 {
+					font-size: 14px;
+				}
+
+				&:hover {
+					background-color: rgba($color: #000000, $alpha: 0.3);
+					box-shadow: 0px 0px 5px 3px rgba($color: #fff, $alpha: 0.5);
+					text-shadow: none;
+				}
+			}
+		}
+	}
+
+	.list::before,
+	.list::after {
+		content: "";
+		background-color: rgba($color: #fff, $alpha: 0.7);
+		top: -15px;
+		bottom: -4px;
+		right: 15px;
+		position: absolute;
+		width: 2px;
+		opacity: 0.7;
+	}
+}
+
+.imp {
+	// font-weight: bold;
+	// background-color: rgba($color: #fff, $alpha: 0.1);
+	padding: 0.3px;
+	text-shadow: 0 0 2px #fff;
+	// text-decoration: underline;
+}
+
+.chips {
+	display: block;	
+	text-align: right;
 	.chip {
 		display: inline-block;
 		font-size: 13px;
 		padding: 0.2rem 1rem;
 		margin: 5px;
 		border-radius: 16px;
-		background: rgba(176, 137, 255, 0.2);
+		background: rgba(131, 135, 255, 0.3);
 		transition: 0.1s;
-		&:hover {
-			// box-shadow: 0px 0px 11px 5px rgba(255, 255, 255, 0.5);
-			font-weight: bold;
-		}
-	}
-}
-
-.text {
-	padding: 1rem;
-	font-size: 15px;
-	max-width: 500px;
-
-	text-indent: 35px;
-	text-align: justify;
-}
-
-.contacts {
-	z-index: 1;
-	width: 100%;
-	min-height: 40px;
-	margin-top: 1rem;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	font-size: 13px;
-	align-items: center;
-
-	a {
-		display: inline-flex;
-		color: #fff;
-		margin: 0.5rem;
-		&:hover {
-			color: #18d4f5;
-		}
-	}
-
-	svg {
-		width: 2rem;
-		height: 2rem;
+	
 	}
 }
