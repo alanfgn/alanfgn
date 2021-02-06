@@ -126,14 +126,13 @@ const Home = () => {
 				<section className={styles.description}>
 					<div className={styles.text} id="description">
 						<h4>Description.</h4>
-						Hey, i'm software developer, graduated in software engenering in{" "}
-						<a href="https://www.ucsal.br/"> Ucsal</a>. Actually i work in{" "}
+						Hey, i'm a software developer, graduated in software engenering in{" "}
+						<a href="https://www.ucsal.br/"> Ucsal</a>. Actually i work at{" "}
 						<a href="https://solutis.com.br/">Solutis</a>, i am {parseInt(today.getFullYear()) - 1998} years
 						old and i am from Salvador, Bahia, Brazil. Fullstack developer mainly with{" "}
 						<span className={styles.imp}>Java</span> and <span className={styles.imp}>React</span>.
-						Interested in data sience, more specificaly of <span className={styles.imp}>text mining</span>{" "}
-						and <span className={styles.imp}>nlp</span> with <span className={styles.imp}>Python</span>.{" "}
-						Look some of my projects bellow.
+						Currently interested in data sience, more specificaly in <span className={styles.imp}>text mining</span>{" "}
+						and <span className={styles.imp}>nlp</span> with <span className={styles.imp}>Python</span>.
 					</div>
 				</section>
 
