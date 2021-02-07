@@ -17,7 +17,7 @@ const Home = () => {
 			<main className={styles.main}>
 				<menu className={styles.menu}>
 					<div>
-						<a href="#description">Description</a>
+						<a href="#description">About</a>
 					</div>
 					<div>
 						<a href="#portfolio">Portfolio</a>
@@ -125,7 +125,7 @@ const Home = () => {
 
 				<section className={styles.description}>
 					<div className={styles.text} id="description">
-						<h4>Description.</h4>
+						<h4>About.</h4>
 						Hey, i'm a software developer, graduated in software engenering in{" "}
 						<a href="https://www.ucsal.br/"> Ucsal</a>. Actually i work at{" "}
 						<a href="https://solutis.com.br/">Solutis</a>, i am {parseInt(today.getFullYear()) - 1998} years
