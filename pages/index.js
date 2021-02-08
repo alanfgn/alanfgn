@@ -140,7 +140,7 @@ const Home = () => {
 					<div className={styles.list} id="portfolio">
 						<h4>Portfolio.</h4>
 						<div className={styles.cardlist}>
-							<a href="https://github.com/alanfgn/mtnp" target="_blank">
+							<a href="https://github.com/alanfgn/text-analysis-political-news" target="_blank">
 								<div className={styles.item}>
 									<h5 className={styles.title}>Text Analysis for Political News</h5>
 									Research work on the application of text analysis techniques in brazilian political
