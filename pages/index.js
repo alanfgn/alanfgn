@@ -11,7 +11,7 @@ const Home = () => {
 	return (
 		<div className={`${styles.container}`}>
 			<Head>
-				<title>Hi, i'm Alan</title>
+				<title>Alan</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={styles.main}>
