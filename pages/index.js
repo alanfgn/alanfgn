@@ -153,18 +153,17 @@ const Home = () => {
 								</div>
 							</a>
 
-							{/* <a href="https://github.com/alanfgn/mtnp" target="_blank">
+							 <a href="https://github.com/alanfgn/Static-Checker" target="_blank">
 								<div className={styles.item}>
-									<h5 className={styles.title}>Text Analysis for Political News</h5>
-									Research work on the application of text analysis techniques in brazilian political
-									news.
+									<h5 className={styles.title}>Static Checker</h5>
+									Static checker created for compilers discipline.
 									<div className={styles.chips}>
-										<span className={styles.chip}> React </span>
-										<span className={styles.chip}> Google Maps </span>
+										<span className={styles.chip}> Java </span>
 									</div>
 								</div>
 							</a>
-
+							
+							{/*
 							<a href="https://github.com/alanfgn/mtnp" target="_blank">
 								<div className={styles.item}>
 									<h5 className={styles.title}>Text Analysis for Political News</h5>
