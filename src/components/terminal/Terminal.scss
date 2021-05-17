@@ -1,7 +1,7 @@
 .terminal {
-    width: 80vw;
+    width: 85vw;
     max-width: 1000px;
-    height: 70vh;
+    height: 75vh;
 
     border-radius: 5px;
     box-shadow: 0px 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
@@ -46,15 +46,18 @@
             }
 
             .close {
-                background-color: rgba($color: rgb(255, 79, 79), $alpha: 0.8);
+                background-color: rgba(255, 0, 0, 0.6);
+                box-shadow: 0px 0px 8px 2px rgba(255, 0, 0, 0.6);
             }
 
             .max {
-                background-color: rgba($color: rgb(228, 228, 0), $alpha: 0.7);
+                background-color: rgba(255, 255, 0, 0.6);
+                box-shadow: 0px 0px 8px 2px rgba(255, 255, 0, 0.6);
             }
 
             .min {
-                background-color: rgba($color: rgb(0, 172, 0), $alpha: 0.7);
+                background-color: rgba(0, 255, 0, 0.6);
+                box-shadow: 0px 0px 8px 2px rgba(0, 255, 0, 0.6);
             }
         }
 

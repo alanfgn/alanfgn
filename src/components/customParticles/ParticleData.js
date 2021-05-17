@@ -1,23 +1,23 @@
 export default {
     particles: {
         number: {
-            value: 57,
+            value: 55,
             density: {
                 enable: true,
-                value_area: 800,
+                value_area: 1341,
             },
         },
         color: {
-            value: "#fff",
+            value: "#ffffff",
         },
         shape: {
             type: "circle",
             stroke: {
-                width: 0,
+                width: 2,
                 color: "#000000",
             },
             polygon: {
-                nb_sides: 5,
+                nb_sides: 4,
             },
             image: {
                 src: "img/github.svg",
@@ -49,8 +49,8 @@ export default {
             enable: true,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.1,
-            width: 1,
+            opacity: 0.5,
+            width: 0.5,
         },
         move: {
             enable: true,
@@ -82,7 +82,7 @@ export default {
         },
         modes: {
             grab: {
-                distance: 400,
+                distance: 350,
                 line_linked: {
                     opacity: 1,
                 },
