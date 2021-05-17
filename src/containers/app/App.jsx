@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Stars from "../../components/stars/Stars";
 import Terminal from "../../components/terminal/Terminal";
-import routes from "../../config/routes/routes"
+import routes from "../../config/routes/routes";
 import { Route, Switch, useHistory } from "react-router-dom";
 import "./App.scss";
 
@@ -22,18 +22,21 @@ const App = () => {
                             component={() => (
                                 <Terminal
                                     command={route.command}
-                                    otherComands={routes()
-                                        .map((r, i) => (
-                                            <button
-                                                key={i}
-                                                onClick={() => {
-                                                    history.push(r.path);
-                                                    setRotation(r.starRotation);
-                                                }}
-                                                className="terminal-command-button">
-                                                {r.name}
-                                            </button>
-                                        ))}>{route.component}</Terminal>
+                                    otherComands={routes().map((r, i) => (
+                                        <button
+                                            key={i}
+                                            onClick={() => {
+                                                history.push(r.path);
+                                                setRotation(r.starRotation);
+                                            }}
+                                            className={`terminal-command-button ${
+                                                history.location.pathname === r.path ? "selected" : ""
+                                            }`}>
+                                            {r.name}
+                                        </button>
+                                    ))}>
+                                    {route.component}
+                                </Terminal>
                             )}
                         />
                     ))}
