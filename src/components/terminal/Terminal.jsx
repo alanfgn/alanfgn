@@ -16,18 +16,23 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
         var i = 0;
 
         if (!commandTextRef) return;
+
         commandTextRef.current.innerHTML = basePath;
         blinkRef.current.innerHTML = "█";
         setShowChild(false);
 
         const typeWriter = () => {
+            if (!commandTextRef.current) return;
+
             if (i < command.length) {
+
                 commandTextRef.current.innerHTML += command.charAt(i);
                 i++;
 
                 setTimeout(typeWriter, randomNumber(100, 150));
             } else {
                 setTimeout(() => {
+                    if (!commandTextRef.current) return;
                     blinkRef.current.innerHTML = "";
                     setShowChild(true);
                 }, randomNumber(200, 220));
@@ -44,8 +49,9 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
                     <span className="close" /> <span className="max" /> <span className="min" />
                 </div>
                 <div className="right-buttons">
-                    {["pt-BR", "en-US"].map(l => (
+                    {["pt-BR", "en-US"].map((l, i) => (
                         <button
+                        key={i}
                             className={l === i18next.language ? "selected" : ""}
                             onClick={() => {
                                 i18n.changeLanguage(l);

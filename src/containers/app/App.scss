@@ -7,14 +7,14 @@
 }
 
 .main {
-	width: 100vw;
+    width: 100vw;
     height: 100vh;
 
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .terminal-command-button {
@@ -22,25 +22,28 @@
     border: 1px solid rgba($color: #fff, $alpha: 0.5);
     border: none;
     color: rgba($color: #fff, $alpha: 0.8);
-    text-shadow: 0 0 2px #fff;
-    
-    border-radius: 3px;
+
     padding: 5px 8px;
-    margin-left: 0.2rem;
+    margin-left: 0.3rem;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 0;
-    // transition: 0.2s;
-    // border: 2px solid rgba($color: #fff, $alpha: 0.8);
+    border-radius: 5px;
+    border: 1px solid rgba($color: #eee, $alpha: 0.5);
+    font-size: 15px;
 
     &:hover {
         background-color: #fff;
         color: rgba(3, 1, 19, 1);
-        text-decoration: none;
     }
 
     &.selected {
-      font-weight: bolder;  
+        font-weight: bolder;
+        border: none;
+    
+        &:hover {
+            background-color: transparent;
+            color: rgba($color: #fff, $alpha: 0.8);
+            cursor: default;
+        }
     }
 }
-
