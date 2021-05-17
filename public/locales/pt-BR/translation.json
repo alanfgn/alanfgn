@@ -1,0 +1,36 @@
+{
+    "menu": {
+        "home": "Home",
+        "about": "Sobre",
+        "projects": "Projetos"
+    },
+    "home": {
+        "title": "Alan Souza Fagundes",
+        "subtitle": "Desenvolvedor"
+    },
+    "about": {
+        "title": "Sobre",
+        "text1": "Olá, eu sou um desenvolvedor de software graduado na <a href='https://www.ucsal.br/'> Ucsal</a>. Atualmente trabalho na <a href='https://solutis.com.br/'>Solutis</a> , Tenho {{years}} anos e sou de Salvador, Bahia, Brazil. Desenvolvedor Fullstack principalmente com React e Java. Atualmente interessando em data sience, mais especificamente em Mineração de texto e Nlp com Pyhton."
+    },
+    "projects": {
+        "title": "Projetos",
+        "chips": {
+            "java": "Java",
+            "python": "Pyhton",
+            "nlp": "Nlp",
+            "text-mining": "Text mining"
+        },
+        "block": "Repositório privado até publicação do artigo",
+        "list": {
+            "antp": {
+                "title": "Análise de texto em noticias politicas",
+                "description": "Trabalho de pesquisa de técnicas de analise de texto em nóticias politicas brasileiras."
+            },
+            "static":{
+                "title": "Static Checker",
+                "description": "Static checker criado para a discipilina de compiladores"
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Project"
+    },
+    "home": {
+        "title": "Alan Souza Fagundes",
+        "subtitle": "Developer"
+    },
+    "about": {
+        "title": "About",
+        "text1": "Hey, i'm a software developer, graduated in software engenering in <a href='https://www.ucsal.br/'> Ucsal</a>. Actually i work at <a href='https://solutis.com.br/'>Solutis</a> , i am {{years}} years old and i am from Salvador, Bahia, Brazil. Fullstack developer mainly with Java and React. Currently interested in data sience, more specificaly in text mining and nlp with Python."
+    },
+    "projects": {
+        "title": "Projects",
+        "chips": {
+            "java": "Java",
+            "pyhton": "Pyhton",
+            "nlp": "Nlp",
+            "text-mining": "Text mining"
+        },
+        "block": "Private repository until publication of the article.",
+        "list": {
+            "antp": {
+                "title": "Text Analysis for Political News",
+                "description": "Research work on the application of text analysis techniques in brazilian political news."
+            },
+            "static": {
+                "title": "Static Checker",
+                "description": "Static checker created for compilers discipline."
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.sky {
+    overflow: hidden;
+    position: fixed;
+    width: 110vw;
+    height: 210vh;
+    // top: 0;
+    z-index: -1;
+    // border: 1px solid white;
+	transition: 4s;
+}
+
+
+$base-glow-color: #fff;
+$primary-glow-color: #1c19c7;
+$secondary-glow-color: #24effd;
+
+.star {
+	position: absolute;
+	animation: glow 3s ease-in-out infinite alternate;
+	animation: fade 3s ease-in-out infinite alternate;
+
+	animation-name: glow, fade;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+
+	@for $i from 0 to 120 {
+		$t: (1 + 0.01 * random(200)) * 1s;
+
+		&:nth-child(#{$i + 1}) {
+			transform: translate(random(110) * 1vw, random(200) * 1vh);
+
+			color: rgba($color: $base-glow-color, $alpha: 0.8);
+
+			font-size: 1px * random(18) + 1;
+
+			animation-duration: $t;
+			animation-delay: -0.01 * random(100) * $t;
+		}
+	}
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px $base-glow-color, 0 0 20px $base-glow-color, 0 0 30px $primary-glow-color,
+			0 0 40px $primary-glow-color, 0 0 50px $primary-glow-color, 0 0 70px $primary-glow-color;
+	}
+
+	to {
+		text-shadow: 0 0 20px $base-glow-color, 0 0 30px $secondary-glow-color, 0 0 40px $secondary-glow-color,
+			0 0 50px $secondary-glow-color, 0 0 60px $secondary-glow-color, 0 0 80px $secondary-glow-color;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.5;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
