@@ -23,15 +23,17 @@
     border: none;
     color: rgba($color: #fff, $alpha: 0.8);
 
-    padding: 5px 8px;
-    margin-left: 0.3rem;
+    padding: 5px 0;
+    margin-right: 0.7rem;
+    margin-left:  0.3rem;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid rgba($color: #eee, $alpha: 0.5);
+    // border-radius: 5px;
+    border-bottom: 2px solid rgba($color: #eee, $alpha: 0.8);
     font-size: 15px;
 
     &:hover {
+        padding: 5px;
         background-color: #fff;
         color: rgba(3, 1, 19, 1);
     }
@@ -39,7 +41,8 @@
     &.selected {
         font-weight: bolder;
         border: none;
-    
+        padding: 5px 0;
+
         &:hover {
             background-color: transparent;
             color: rgba($color: #fff, $alpha: 0.8);
