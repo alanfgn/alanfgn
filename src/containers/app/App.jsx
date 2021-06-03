@@ -14,20 +14,6 @@ const App = () => {
 
     return (
         <div className="container">
-            <header>
-                <meta property="og:title" content={t("tumbnail-title")} />
-                <meta property="og:description" content={t("tumbnail-description")} />
-                <meta property="og:url" content="https://alanfgn.vercel.app/" />
-                <meta property="og:type" content="website" />
-                <meta property="og:image" itemprop="image" content="%PUBLIC_URL%/Screenshot.png" />
-                <meta property="og:image:width" content="300" />
-                <meta property="og:image:height" content="300" />
-                <link rel="icon" href="image/favicon.ico" type="%PUBLIC_URL%/favicon.ico" />
-                <meta charset="utf-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta content="width=device-width, initial-scale=1" name="viewport" />
-            </header>
-
             <Stars rotation={rotation} />
             <main className="main">
                 <Switch>
