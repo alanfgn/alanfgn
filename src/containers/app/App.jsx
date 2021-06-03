@@ -3,12 +3,9 @@ import Stars from "../../components/stars/Stars";
 import Terminal from "../../components/terminal/Terminal";
 import routes from "../../config/routes/routes";
 import { Route, Switch, useHistory } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import "./App.scss";
 
 const App = () => {
-    const { t } = useTranslation();
-
     const history = useHistory();
     const [rotation, setRotation] = useState(0);
 
