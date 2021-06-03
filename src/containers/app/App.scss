@@ -17,31 +17,42 @@
     align-items: center;
 }
 
+
+.terminal-buttons {
+    // border: 1px solid rgba($color: #eee, $alpha: 0.8);
+    display: inline-block;
+}
+
 .terminal-command-button {
     background-color: transparent;
     border: 1px solid rgba($color: #fff, $alpha: 0.5);
     border: none;
-    color: rgba($color: #fff, $alpha: 0.8);
+    color: rgba($color: #6200ff, $alpha: 1);
+    text-shadow: 0 0 10px #6930c3;
 
-    padding: 5px 0;
-    margin-right: 0.7rem;
-    margin-left:  0.3rem;
+
+    padding: 5px;
+    // margin-right: 0.3rem;
+    margin-right: 0.5em;
+
     cursor: pointer;
     text-decoration: none;
     // border-radius: 5px;
-    border-bottom: 2px solid rgba($color: #eee, $alpha: 0.8);
     font-size: 15px;
+    font-weight: bolder;
+    // width: 70px;
 
     &:hover {
-        padding: 5px;
         background-color: #fff;
+        text-shadow: none;
         color: rgba(3, 1, 19, 1);
     }
 
     &.selected {
-        font-weight: bolder;
+        color: rgba($color: #fff, $alpha: 0.8);
+        text-shadow: 0 0 3px #fff;
+
         border: none;
-        padding: 5px 0;
 
         &:hover {
             background-color: transparent;

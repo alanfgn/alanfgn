@@ -46,19 +46,23 @@
                 border-radius: 50%;
             }
 
+            $close-color:#fd3a69 ;
+            $max-color: #fecd1a;
+            $min-color: #54e346;
+
             .close {
-                background-color: rgba(255, 0, 0, 0.6);
-                box-shadow: 0px 0px 6px 1px rgba(255, 0, 0, 0.6);
+                background-color: $close-color;
+                box-shadow: 0px 0px 6px 1px $close-color;
             }
 
             .max {
-                background-color: rgba(255, 255, 0, 0.6);
-                box-shadow: 0px 0px 6px 1px rgba(255, 255, 0, 0.6);
+                background-color: $max-color;
+                box-shadow: 0px 0px 6px 1px $max-color;
             }
 
             .min {
-                background-color: rgba(0, 255, 0, 0.6);
-                box-shadow: 0px 0px 6px 1px rgba(0, 255, 0, 0.6);
+                background-color: $min-color;
+                box-shadow: 0px 0px 6px 1px $min-color;
             }
         }
 

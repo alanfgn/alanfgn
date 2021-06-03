@@ -22,19 +22,23 @@ const App = () => {
                             component={() => (
                                 <Terminal
                                     command={route.command}
-                                    otherComands={routes().map((r, i) => (
-                                        <button
-                                            key={i}
-                                            onClick={() => {
-                                                history.push(r.path);
-                                                setRotation(r.starRotation);
-                                            }}
-                                            className={`terminal-command-button ${
-                                                history.location.pathname === r.path ? "selected" : ""
-                                            }`}>
-                                            {r.name}
-                                        </button>
-                                    ))}>
+                                    otherComands={
+                                        <div className="terminal-buttons">
+                                            {routes().map((r, i) => (
+                                                <button
+                                                    key={i}
+                                                    onClick={() => {
+                                                        history.push(r.path);
+                                                        setRotation(r.starRotation);
+                                                    }}
+                                                    className={`terminal-command-button ${
+                                                        history.location.pathname === r.path ? "selected" : ""
+                                                    }`}>
+                                                    {r.name}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    }>
                                     {route.component}
                                 </Terminal>
                             )}

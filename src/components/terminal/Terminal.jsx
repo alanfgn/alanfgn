@@ -69,7 +69,7 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
             {showChild && (
                 <div className="command command-bottom  ">
                     <span>{basePath}</span>
-                    <span className="blink">█</span>
+                    <span className="blink">{"█ "}</span>
                     {otherComands}
                 </div>
             )}
