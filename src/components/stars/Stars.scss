@@ -25,7 +25,7 @@ $secondary-glow-color: #24effd;
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none;
 
-	@for $i from 0 to 120 {
+	@for $i from 0 to 100 {
 		$t: (1 + 0.01 * random(200)) * 1s;
 
 		&:nth-child(#{$i + 1}) {
