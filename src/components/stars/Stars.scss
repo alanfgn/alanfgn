@@ -33,7 +33,7 @@ $secondary-glow-color: #24effd;
 
 			color: rgba($color: $base-glow-color, $alpha: 0.8);
 
-			font-size: 0.01em * random(150) + 0.1;
+			font-size: 1px * random(9) + 6;
 
 			animation-duration: $t;
 			animation-delay: -0.01 * random(100) * $t;
