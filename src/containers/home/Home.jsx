@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faGithub, faLinkedin, faSpotify, faHackerrank } from "@fortawesome/free-brands-svg-icons";
+import { ReactComponent as GmailLogo } from "../../assets/imgs/gmail.svg"
+import { ReactComponent as MalLogo } from "../../assets/imgs/mal.svg"
 import { useTranslation } from "react-i18next";
 import "./Home.scss";
 
@@ -32,8 +33,43 @@ const Home = () => {
                 </a>
 
                 <a href="mailto:alan.souza.fagundes@gmail.com" rel="noopener noreferrer" target="_blank" title="Email">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <GmailLogo/>
                 </a>
+
+                <a
+                    href="https://myanimelist.net/profile/A-lan"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Linkedin">
+                    <MalLogo/>
+                </a>
+
+                <a
+                    href="https://open.spotify.com/user/xj4038gurw520wrkh1wut6a15?si=cb3b06c9f79d4702"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Linkedin">
+                    <FontAwesomeIcon icon={faSpotify} />
+                </a>
+
+                <a
+                    href="https://www.hackerrank.com/alanfgn"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Linkedin">
+                    <FontAwesomeIcon icon={faHackerrank} />
+                </a>
+{/* 
+
+                <a
+                    href="https://www.goodreads.com/alanfgn"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Linkedin">
+                    <FontAwesomeIcon icon={faGoodreads} />
+                </a> */}
+
+                
             </div>
         </div>
     );
