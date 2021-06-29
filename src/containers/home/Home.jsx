@@ -40,7 +40,7 @@ const Home = () => {
                     href="https://myanimelist.net/profile/A-lan"
                     rel="noopener noreferrer"
                     target="_blank"
-                    title="Linkedin">
+                    title="MyAnimeList">
                     <MalLogo/>
                 </a>
 
@@ -48,7 +48,7 @@ const Home = () => {
                     href="https://open.spotify.com/user/xj4038gurw520wrkh1wut6a15?si=cb3b06c9f79d4702"
                     rel="noopener noreferrer"
                     target="_blank"
-                    title="Linkedin">
+                    title="Spotify">
                     <FontAwesomeIcon icon={faSpotify} />
                 </a>
 
@@ -56,7 +56,7 @@ const Home = () => {
                     href="https://www.hackerrank.com/alanfgn"
                     rel="noopener noreferrer"
                     target="_blank"
-                    title="Linkedin">
+                    title="HackerRank">
                     <FontAwesomeIcon icon={faHackerrank} />
                 </a>
 {/* 
