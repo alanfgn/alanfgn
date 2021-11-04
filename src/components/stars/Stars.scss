@@ -26,7 +26,7 @@ $secondary-glow-color: #24effd;
 	user-select: none;
 
 	@for $i from 0 to 80 {
-		$t: (1 + 0.01 * random(200)) * 1s;
+		$t: (1 + 0.01 * random(250)) * 1s;
 
 		&:nth-child(#{$i + 1}) {
 			transform: translate(random(110) * 1vw, random(200) * 1vh);
@@ -55,7 +55,7 @@ $secondary-glow-color: #24effd;
 
 @keyframes fade {
 	from {
-		opacity: 0.5;
+		opacity: 0.2;
 	}
 
 	to {

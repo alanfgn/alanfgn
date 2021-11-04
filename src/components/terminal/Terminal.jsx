@@ -25,7 +25,6 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
             if (!commandTextRef.current) return;
 
             if (i < command.length) {
-
                 commandTextRef.current.innerHTML += command.charAt(i);
                 i++;
 
@@ -51,7 +50,7 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
                 <div className="right-buttons">
                     {["pt-BR", "en-US"].map((l, i) => (
                         <button
-                        key={i}
+                            key={i}
                             className={l === i18next.language ? "selected" : ""}
                             onClick={() => {
                                 i18n.changeLanguage(l);
@@ -65,14 +64,12 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
                 <span ref={commandTextRef}></span>
                 <span className="blink" ref={blinkRef}></span>
             </div>
-            <div className="content">{showChild && children}</div>
-            {showChild && (
-                <div className="command command-bottom  ">
-                    <span>{basePath}</span>
-                    <span className="blink">{"█ "}</span>
-                    {otherComands}
-                </div>
-            )}
+            <div className={`content ${!showChild && "none"}`}>{children}</div>
+            <div className={`command command-bottom ${!showChild && "none"} `}>
+                <span>{basePath}</span>
+                <span className="blink">{"█ "}</span>
+                {otherComands}
+            </div>
         </section>
     );
 };

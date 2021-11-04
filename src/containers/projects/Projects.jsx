@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import "./Projects.scss";
 
@@ -22,12 +20,6 @@ const Projects = () => {
                             <span className="chip"> {t("projects.chips.nlp")} </span>
                             <span className="chip"> {t("projects.chips.text-mining")} </span>
                         </div>
-                        <span className="block">
-                            <i>
-                                <FontAwesomeIcon icon={faLock} />
-                            </i>
-                            {t("projects.block")}
-                        </span>
                     </div>
                 </a>
 

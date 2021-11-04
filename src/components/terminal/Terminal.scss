@@ -19,14 +19,24 @@
         height: 5vh;
         color: rgba($color: #fff, $alpha: 0.8);
 
+        // border: 1px solid red;
+        transition: 2s;
+
         &.command-bottom {
             color: #fff;
+
+            // display: flex;
+            // background-color: rgba($color: #252525, $alpha: 0.2);
+            border-radius: 3px;
+            padding: 5px 10px;
         }
     }
 
     .content {
         height: 60vh;
         overflow-y: auto;
+        transition: 1s;
+
     }
 
     .header {
@@ -100,5 +110,7 @@
 
 .blink {
     opacity: 1;
-    animation: blink 1s linear infinite;
+    animation: blink 1.5s linear infinite;
+    font-size: 1rem;
+    font-weight: bold;
 }

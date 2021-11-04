@@ -31,7 +31,7 @@ const App = () => {
                                                         history.push(r.path);
                                                         setRotation(r.starRotation);
                                                     }}
-                                                    className={`terminal-command-button ${
+                                                    className={`terminal-command-button code ${
                                                         history.location.pathname === r.path ? "selected" : ""
                                                     }`}>
                                                     {r.name}

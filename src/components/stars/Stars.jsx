@@ -8,7 +8,7 @@ const Stars = ({ qntd, rotation }) => {
             style={{
                 transform: `rotate(${rotation}deg)`,
             }}>
-            {[...Array(qntd || 80).keys()].map(i => (
+            {[...Array(qntd || 100).keys()].map(i => (
                 <span key={i} className="star">
                     ✦
                 </span>
