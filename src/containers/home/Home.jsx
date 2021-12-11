@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faGithub, faLinkedin, faHackerrank } from "@fortawesome/free-brands-svg-icons";
 import { ReactComponent as GmailLogo } from "../../assets/imgs/gmail.svg"
 // import { ReactComponent as MalLogo } from "../../assets/imgs/mal.svg"
 import { useTranslation } from "react-i18next";
@@ -35,6 +35,14 @@ const Home = () => {
                 <a href="mailto:alan.souza.fagundes@gmail.com" rel="noopener noreferrer" target="_blank" title="Email">
                     <GmailLogo/>
                 </a>
+
+                <a
+                    href="https://www.hackerrank.com/alanfgn"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="HackerRank">
+                    <FontAwesomeIcon icon={faHackerrank} />
+                </a>
 {/* 
                 <a
                     href="https://myanimelist.net/profile/A-lan"
@@ -52,13 +60,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faSpotify} />
                 </a>
 
-                <a
-                    href="https://www.hackerrank.com/alanfgn"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title="HackerRank">
-                    <FontAwesomeIcon icon={faHackerrank} />
-                </a>
+   
 
 
                 <a
