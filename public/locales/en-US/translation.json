@@ -12,7 +12,7 @@
     },
     "about": {
         "title": "About",
-        "text1": "Hey, i'm a software developer, graduated in software engenering in <a href='https://www.ucsal.br/'> Ucsal</a>. Actually i work at <a href='https://solutis.com.br/'>Solutis</a> , i am {{years}} years old and i am from Salvador, Bahia, Brazil. Fullstack developer mainly with Java and React. Currently interested in data sience, more specificaly in text mining and nlp with Python."
+        "text1": "Hey, I'm a developer graduated in Software Engineering at UCSal, Postgraduate in Data Engineering at PUC Minas and currently working as Sr Software Engineer at Solutis. I'm {{years}} years old and I'm from Salvador, Bahia, Brazil. Linux enthusiast and love logic problems. For me, the ability to extract and store information is the greatest human skill and I want to expand that capacity through programming."
     },
     "projects": {
         "title": "Projects",

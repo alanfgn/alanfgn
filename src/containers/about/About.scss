@@ -1,17 +1,25 @@
 .about {
-    padding: 2rem 10%;
+    padding: 2rem 1rem;
     height: 100%;
-
+    display: flex;
 
     .bold {
         font-weight: bold;
         display: block;
         font-size: 15px;
-
     }
 
-    .text {
-        padding-top: 1rem;
-        text-align: justify;   
+    .container-text {
+        flex: 3;
+        .text {
+            padding-top: 1.5rem;
+            padding-right: 2rem;
+            text-align: justify;
+        }
+    }
+
+    img {
+        flex: 1;
+        border-radius: 50%;
     }
 }

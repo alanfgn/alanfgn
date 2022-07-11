@@ -28,7 +28,7 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
                 commandTextRef.current.innerHTML += command.charAt(i);
                 i++;
 
-                setTimeout(typeWriter, randomNumber(100, 150));
+                setTimeout(typeWriter, randomNumber(80, 110));
             } else {
                 setTimeout(() => {
                     if (!commandTextRef.current) return;
@@ -44,20 +44,20 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
     return (
         <section className="terminal">
             <div className="header">
-                <div className="left-buttons">
-                    <span className="close" /> <span className="max" /> <span className="min" />
-                </div>
+                <div className="left-buttons">{otherComands}</div>
                 <div className="right-buttons">
-                    {["pt-BR", "en-US"].map((l, i) => (
-                        <button
-                            key={i}
-                            className={l === i18next.language ? "selected" : ""}
-                            onClick={() => {
-                                i18n.changeLanguage(l);
-                            }}>
-                            {l}
-                        </button>
-                    ))}
+                    <div className="right-buttons-container">
+                        {["pt-BR", "en-US"].map((l, i) => (
+                            <button
+                                key={i}
+                                className={l === i18next.language ? "selected" : ""}
+                                onClick={() => {
+                                    i18n.changeLanguage(l);
+                                }}>
+                                {l}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="command ">
@@ -68,7 +68,6 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
             <div className={`command command-bottom ${!showChild && "none"} `}>
                 <span>{basePath}</span>
                 <span className="blink">{"█ "}</span>
-                {otherComands}
             </div>
         </section>
     );

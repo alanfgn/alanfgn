@@ -12,7 +12,7 @@
     },
     "about": {
         "title": "Sobre",
-        "text1": "Olá, eu sou um desenvolvedor de software graduado na <a href='https://www.ucsal.br/'> Ucsal</a>. Atualmente trabalho na <a href='https://solutis.com.br/'>Solutis</a>, Tenho {{years}} anos e sou de Salvador, Bahia, Brazil. Desenvolvedor Fullstack principalmente com React e Java. Atualmente interessando em data sience, mais especificamente em Mineração de texto e Nlp com Pyhton."
+        "text1": "Olá, eu sou um desenvolvedor graduado em Engenharia de Software pela UCSal, Pós graduando em Engenharia de dados na PUC Minas e atualmente trabalhando como Sr Software Engineer na Solutis. Tenho {{years}} anos e sou de Salvador, Bahia, Brazil. Entusiasta Linux e amo problemas de logica. Para mim a capacidade de extrair e armazenar informação é a maior habilidade humana e quero ampliar essa capacidade por meio da programação."
     },
     "projects": {
         "title": "Projetos",
