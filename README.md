@@ -1,8 +1,8 @@
 ### Hey, i'm Alan 👋
 
 ```js
-// Currently working on Front-end
-console.log("With React");
+// Currently working as Data Engineer
+println("With Scala")
 ```
 
 ```java
