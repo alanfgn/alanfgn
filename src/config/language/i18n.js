@@ -3,14 +3,14 @@ import Backend from 'i18next-xhr-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-const availableLanguages = ['en-US', 'pt-BR'];
+const availableLanguages = ['en', 'pt'];
 
 i18n
   .use(Backend)
   .use(LanguageDetector) 
   .use(initReactI18next) 
   .init({
-    fallbackLng: 'pt-BR', 
+    fallbackLng: 'pt', 
     debug: false,
     whitelist: availableLanguages,
     ns: ['translation'],

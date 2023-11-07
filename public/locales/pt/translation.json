@@ -8,11 +8,11 @@
     },
     "home": {
         "title": "Eu, Alan",
-        "subtitle": "Desenvolvedor"
+        "subtitle": "Dev"
     },
     "about": {
         "title": "Sobre",
-        "text1": "Olá, eu sou um desenvolvedor graduado em Engenharia de Software pela UCSal, Pós graduando em Engenharia de dados na PUC Minas e atualmente trabalhando como Sr Software Engineer na Solutis. Tenho {{years}} anos e sou de Salvador, Bahia, Brazil. Entusiasta Linux e amo problemas de logica. Para mim a capacidade de extrair e armazenar informação é a maior habilidade humana e quero ampliar essa capacidade por meio da programação."
+        "text1": "Olá, sou um engenheiro de software/dados, tenho {{years}} anos e esse é meu site. Veja esse magnifico peixe em ascii:"
     },
     "projects": {
         "title": "Projetos",

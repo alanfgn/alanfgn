@@ -47,7 +47,7 @@ const Terminal = ({ command, children, maxWidth, height, otherComands }) => {
                 <div className="left-buttons">{otherComands}</div>
                 <div className="right-buttons">
                     <div className="right-buttons-container">
-                        {["pt-BR", "en-US"].map((l, i) => (
+                        {["pt", "en"].map((l, i) => (
                             <button
                                 key={i}
                                 className={l === i18next.language ? "selected" : ""}

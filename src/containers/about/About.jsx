@@ -1,11 +1,51 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./About.scss";
-import foto from "../../assets/imgs/foto.jpg";
+import koiTxtFile from "../../assets/koi-file.txt";
 
 const About = () => {
     const today = new Date();
     const { t } = useTranslation();
+
+    const koiRef = useRef(null);
+
+    const [asciiFrames, setAsciiFrames] = React.useState([]);
+
+    useEffect(() => {
+        fetch(koiTxtFile)
+            .then((r) => r.text())
+            .then((text) => {
+                setAsciiFrames(text.split("END\n"));
+            });
+    }, [setAsciiFrames]);
+
+    useEffect(() => {
+        var i = 120;
+
+        if (!koiRef) return;
+
+        const animateKoi = () => {
+            console.log("#############");
+
+            if (!koiRef.current || !asciiFrames) return;
+            
+            console.log(i + "######" + asciiFrames.length);
+
+            if (i >= asciiFrames.length) {
+                i = 0;
+                setTimeout(animateKoi, 500);
+                return
+
+            };
+
+            // console.log(asciiFrames[i]);
+            koiRef.current.innerHTML = asciiFrames[i].replace(/</g,"&lt;",);
+            i++;
+            setTimeout(animateKoi, 500);
+        };
+
+        setTimeout(animateKoi, 500);
+    }, [asciiFrames, koiRef]);
 
     return (
         <div className="about" data-i18n="[html]content.body">
@@ -19,8 +59,9 @@ const About = () => {
                         }),
                     }}></div>
             </div>
-   
-            <img src={foto} />
+            <div ref={koiRef} className="koi">
+                
+            </div>
         </div>
     );
 };

@@ -8,11 +8,11 @@
     },
     "home": {
         "title": "Me, Alan",
-        "subtitle": "Developer"
+        "subtitle": "Dev"
     },
     "about": {
         "title": "About",
-        "text1": "Hey, I'm a developer graduated in Software Engineering at UCSal, Postgraduate in Data Engineering at PUC Minas and currently working as Sr Software Engineer at Solutis. I'm {{years}} years old and I'm from Salvador, Bahia, Brazil. Linux enthusiast and love logic problems. For me, the ability to extract and store information is the greatest human skill and I want to expand that capacity through programming."
+        "text1": "Hi, I'm software/data engineer, {{years}} years old and this is my website. See this magnificent ascii fish:"
     },
     "projects": {
         "title": "Projects",
