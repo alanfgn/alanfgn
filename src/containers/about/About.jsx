@@ -25,26 +25,20 @@ const About = () => {
         if (!koiRef) return;
 
         const animateKoi = () => {
-            console.log("#############");
-
             if (!koiRef.current || !asciiFrames) return;
-            
-            console.log(i + "######" + asciiFrames.length);
-
             if (i >= asciiFrames.length) {
                 i = 0;
-                setTimeout(animateKoi, 500);
-                return
-
-            };
+                setTimeout(animateKoi, 400);
+                return;
+            }
 
             // console.log(asciiFrames[i]);
-            koiRef.current.innerHTML = asciiFrames[i].replace(/</g,"&lt;",);
+            koiRef.current.innerHTML = asciiFrames[i].replace(/</g, "&lt;");
             i++;
-            setTimeout(animateKoi, 500);
+            setTimeout(animateKoi, 400);
         };
 
-        setTimeout(animateKoi, 500);
+        setTimeout(animateKoi, 400);
     }, [asciiFrames, koiRef]);
 
     return (
@@ -59,8 +53,8 @@ const About = () => {
                         }),
                     }}></div>
             </div>
-            <div ref={koiRef} className="koi">
-                
+            <div className="pond">
+                <div ref={koiRef} className="koi"></div>
             </div>
         </div>
     );

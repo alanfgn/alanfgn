@@ -81,8 +81,8 @@ function initializeStars() {
     var winArea = window.innerWidth * window.innerHeight;
     
     var smallStarsDensity = 0.00001;
-    var mediumStarsDensity = 0.00005;
-    var largeStarsDensity = 0.000007;
+    var mediumStarsDensity = 0.00003;
+    var largeStarsDensity = 0.0000003;
 
     var smallStarsCount = winArea * smallStarsDensity;
     var mediumStarsCount = winArea * mediumStarsDensity;
@@ -115,7 +115,7 @@ var lastPaintTime = 0;
 
 function paintLoop(timestamp) {
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
-    var delta = (window.requestAnimationFrame ? timestamp - lastPaintTime : ms) / 1500;
+    var delta = (window.requestAnimationFrame ? timestamp - lastPaintTime : ms) / 8500;
     
     if (delta > 0.05) {
         delta = 0.05;

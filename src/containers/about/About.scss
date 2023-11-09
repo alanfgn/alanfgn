@@ -23,21 +23,35 @@
         border-radius: 50%;
     }
 
-    .koi {
-        font-family: monospace;
-        white-space: pre;
-        font-size: 0.7em;
-        text-overflow: clip;
-
-        width: 60vw;
-        height: 100%;
+    .pond {
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        left: 0;
+        top: 0;
 
         position: fixed;
-        font-weight: lighter;
-        left: 20%;
-        top: 0;
-        line-height: unset !important;
-        opacity: 0.6;
-        z-index: -1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .koi {
+
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+            font-family: monospace;
+            white-space: pre;
+            font-size: 0.75em;
+            text-overflow: clip;
+
+            font-weight: lighter;
+            line-height: unset !important;
+            opacity: 0.75;
+            width: 50%;
+
+        }
     }
 }
